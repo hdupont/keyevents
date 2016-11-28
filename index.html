@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="css/test.css">
+</head>
+<body>
+
+<main>
+	<p>Tapez un caractère dans la zone de texte ci-dessous et j'y afficherai le caractère suivant :)</p>
+	
+	<!-- Zone d'affichage du caractère qui suit celui tapé par l'utilisateur -->
+	<input id="nextinput" type="text"></input>
+	
+	<hr />
+	
+	<p>Cliquez en dehors de la zone de texte et appuyez sur une touche et je vous afficherai</p>
+	<ul>
+		<li>le caractère correspondant à cette touche</li>
+		<li>le code correspondant à ce caractère</li>
+		<li>les touches de combinaison éventuellement enfoncées lorsque la touche a été tapée (les touches de combinaisons sont : <code>Alt</code>, <code>Control</code> et <code>Maj</code>)</li>
+	</ul>
+	<p>Je vous dirais tout ça au format suivant :</p>
+	<p><span class="tabulation"></span><code>touche = code [touches de combinaisons]</code></p>
+	<p>Petit plus, je conserve un historique des touches que vous avez tapées :)</p>
+	
+	<!-- Zone d'affichage des touches tapées par l'utilisateur -->
+	<div id="output">
+		<div></div>
+	</div>
+</main>
+
+<script src=js/keyevent.js></script>
+
+<script src=js/keyevent.domtk.js></script>
+<script src=js/keyevent.ui.js></script>
+
+<script src=js/keyevent.keys.js></script>
+<script src=js/main.js></script>
+</body>
+</html>

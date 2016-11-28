@@ -1,0 +1,13 @@
+#output div:first-child::before {
+	content: "> ";
+	font-family: "Courier New", Courier, monospace;
+}
+
+#output div:first-child {
+	background-color: lightgrey;
+}
+
+.tabulation {
+	width: 50px;
+	display: inline-block;
+}
