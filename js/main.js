@@ -15,6 +15,8 @@
 	 * @param {event} event l'événement généré par l'appuie (keydown) d'une touche.
 	 */
 	function bodyKeydownListener(event) {
+		event.preventDefault();
+		
 		if (keys.wasAlreadyPressed(event)) {
 			return;
 		}
