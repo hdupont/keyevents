@@ -39,17 +39,18 @@ keyevent.keys = (function() {
 		},
 		/**
 		 * Construit la chaine de caractère qui sera affichée à l'utilisateur.
+		 * @param evt {event} l'événement généré par la touche tapée.
 		 * @param {string} key est la chaine correspondant à la touche tapée.
 		 * @param {string} code est le code correspondant à la touche tapée.
 		 * @param {array[string]} modifierKeys contient les touches de modifications
 		 * qui étaient enfoncées lorsque la touche
 		 * @returns
 		 */
-		buildInfoString: function (key, code) {
+		buildInfoString: function (evt, key, code) {
 			var infoString = "";
 			infoString += key + " = " + this._displayedCharCode(key, code);
 			var additionalModifierKeys = [];
-			this._getActivatedModifierKeys(event).forEach(function(mk) {
+			this._getActivatedModifierKeys(evt).forEach(function(mk) {
 				if (key !== mk.key) {
 					additionalModifierKeys.push(mk.label);
 				}

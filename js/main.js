@@ -22,7 +22,7 @@
 			keys.recordKey(event)
 		}
 		
-		var infoString = keyevent.keys.buildInfoString(event.key, event.keyCode)
+		var infoString = keyevent.keys.buildInfoString(event, event.key, event.keyCode)
 		ui.outputKeyPressedInfo(infoString);
 	}
 	
