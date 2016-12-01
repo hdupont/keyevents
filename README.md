@@ -5,4 +5,4 @@
 
 # Solution proposée
 
-https://hdupont.github.io/keyevents/
+https://hdupont.github.io/nsjs_keyevents/
